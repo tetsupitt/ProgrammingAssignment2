@@ -2,6 +2,8 @@
 ## functions do
 
 ## Write a short comment describing this function
+#set the input x as a matrix and set m as a null
+#then I changed every reference to "mean"
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
         set <- function(y) {
@@ -18,7 +20,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+#changed mean to solve and x to m.
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         m <- x$getinverse()
@@ -31,3 +33,4 @@ cacheSolve <- function(x, ...) {
         x$setinverse(m)
         m
 }
+
